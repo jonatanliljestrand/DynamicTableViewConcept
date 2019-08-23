@@ -12,6 +12,25 @@ protocol TableViewCellProtocol {
 	func injectWith(data: CellDataProtocol)
 }
 
+protocol CellDataProtocol {
+	var cellIdentifier: String { get }
+}
+
+enum CellTypes: String {
+	case celltype1, celltype2, celltype3
+	
+	func classRef() -> CellDataProtocol.Type {
+		switch self {
+		case .celltype1:
+			return CellType1Data.self
+		case .celltype2:
+			return CellType2Data.self
+		case .celltype3:
+			return CellType3Data.self
+		}
+	}
+}
+
 class CellType1: UITableViewCell, TableViewCellProtocol {
 	func injectWith(data: CellDataProtocol) {
 		let data = data as! CellType1Data
@@ -22,8 +41,8 @@ class CellType1: UITableViewCell, TableViewCellProtocol {
 
 struct CellType1Data: CellDataProtocol {
 	let cellIdentifier: String = "Celltype 1"
-	let string1: String
-	let string2: String
+	let string1: String = "apa"
+	let string2: String = "smurf"
 }
 
 class CellType2: UITableViewCell, TableViewCellProtocol {
@@ -36,8 +55,8 @@ class CellType2: UITableViewCell, TableViewCellProtocol {
 
 struct CellType2Data: CellDataProtocol {
 	let cellIdentifier: String = "Celltype 2"
-	let string1: String
-	let string2: String
+	let string1: String = "apa"
+	let string2: String = "smurf"
 }
 
 class CellType3: UITableViewCell, TableViewCellProtocol {
@@ -50,7 +69,7 @@ class CellType3: UITableViewCell, TableViewCellProtocol {
 
 struct CellType3Data: CellDataProtocol {
 	let cellIdentifier: String = "Celltype 3"
-	let string1: String
-	let string2: String
+	let string1: String = "apa"
+	let string2: String = "smurf"
 }
 

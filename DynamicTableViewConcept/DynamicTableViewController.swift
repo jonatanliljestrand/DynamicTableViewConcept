@@ -16,6 +16,7 @@ class DynamicTableViewController: UIViewController, UITableViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.tableFooterView = UIView(frame: CGRect.zero)
+		tableView.reloadData()
 	}
 }
 
@@ -36,12 +37,14 @@ extension DynamicTableViewController: UITableViewDataSource {
 	}
 }
 
-protocol CellDataProtocol {
-	var cellIdentifier: String { get }
-}
-
 class ViewModel {
-	var cellDataArray: [CellDataProtocol] = []
+	private var cellDataArray: [CellDataProtocol] = [CellType1Data(), CellType3Data(), CellType2Data()]
+	
+	func updateValues(withCompletion completion: ()->()) {
+		
+		completion()
+	}
+	
 	var numberOfSections: Int {
 		return 1
 	}
@@ -51,6 +54,6 @@ class ViewModel {
 	}
 	
 	func numberOfRows(inSection section: Int) -> Int {
-		return 0
+		return cellDataArray.count
 	}
 }

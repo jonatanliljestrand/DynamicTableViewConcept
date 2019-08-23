@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 1" textLabel="pzi-AW-449" detailTextLabel="UV7-vN-aMY" style="IBUITableViewCellStyleValue1" id="dW2-ei-vkG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 1" textLabel="pzi-AW-449" detailTextLabel="UV7-vN-aMY" style="IBUITableViewCellStyleValue1" id="dW2-ei-vkG" customClass="CellType1" customModule="DynamicTableViewConcept" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dW2-ei-vkG" id="X8q-Up-iiF">
@@ -46,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 2" textLabel="w6i-tZ-vVg" detailTextLabel="Qdt-rJ-kE2" style="IBUITableViewCellStyleValue2" id="U2g-o6-qPF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 2" textLabel="w6i-tZ-vVg" detailTextLabel="Qdt-rJ-kE2" style="IBUITableViewCellStyleValue2" id="U2g-o6-qPF" customClass="CellType2" customModule="DynamicTableViewConcept" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U2g-o6-qPF" id="lRq-af-em2">
@@ -70,7 +70,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 3" textLabel="ARz-Pd-WvF" detailTextLabel="fTx-zJ-aV8" style="IBUITableViewCellStyleSubtitle" id="TRK-Ei-aib">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celltype 3" textLabel="ARz-Pd-WvF" detailTextLabel="fTx-zJ-aV8" style="IBUITableViewCellStyleSubtitle" id="TRK-Ei-aib" customClass="CellType3" customModule="DynamicTableViewConcept" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TRK-Ei-aib" id="6CW-YH-eXS">
